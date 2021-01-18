@@ -1,0 +1,114 @@
+.header{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #000;
+    background-image: url('../img/header/headerbg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.nav{
+    margin: 0 auto;
+    padding: 0 15px;
+    padding-top: 25px;
+    margin-bottom: 150px;
+    max-width: 1430px;
+    width: 100%;
+    height: auto;
+    .nav__wrap{
+        display: flex;
+        justify-content: space-between;
+    }
+    a{
+        text-transform: uppercase;
+        font-family: Open Sans;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 18px;
+        color: #fff;
+    }
+}
+.list-menu{
+    &:hover{
+        
+        a{
+            color: #E8C300;
+            border-bottom: 2px solid #E8C300;
+            transition: .5s;
+        }
+        .nav-img{
+            border-bottom: none;
+        }
+    }
+}
+.nav-img{
+    &:hover{
+        svg{
+            border-radius: 100%;
+            box-shadow:1px 1px 16px 12px rgba(251,234,173,1);
+        }
+    }
+}
+.header__wrap{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.title__wrap{
+    width: 100%;
+    height: 100%;
+}
+.header__subtitle{
+    margin-bottom: 60px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    color: #fff;
+    text-align: center;
+}
+.header__title{
+    font-size: 96px;
+    font-family: 'Banny';
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    line-height: 1.2;
+}
+
+.wrap__link-btn{
+    display: flex;
+    justify-content: center;
+}
+.header-link{
+    color: #fff;
+}
+.date{
+    content: '';
+    position: absolute;
+    left: -5%;
+    top: 60%;
+    color: #fff;
+    margin: auto;
+    transform: rotate(-90deg);
+        .work{
+        
+            font-family: Open Sans;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 12px;
+            line-height: 12px;           
+        }
+}
+.icon__wrap{
+    content: '';
+    position: absolute;
+    right:0;
+    top: 15%;
+    color: #fff;
+    margin: auto;
+}

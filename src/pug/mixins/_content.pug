@@ -1,0 +1,9 @@
+include ./_line
+
+mixin content(title, subtitle, text)
+    .wrap__content
+        h2.content__title #{title}
+        +line
+        h4.content__subtitle #{subtitle}
+        p.content__text #{text}
+
