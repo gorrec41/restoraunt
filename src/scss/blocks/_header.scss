@@ -1,8 +1,11 @@
 .header{
     width: 100%;
     min-height: 100vh;
+    padding-top: 25px;
+    padding-bottom: 80px;
     background-color: #000;
     background-image: url('../img/header/headerbg.jpg');
+    animation: bg 10s linear infinite;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -10,7 +13,7 @@
 .nav{
     margin: 0 auto;
     padding: 0 15px;
-    padding-top: 25px;
+    
     margin-bottom: 150px;
     max-width: 1430px;
     width: 100%;
@@ -42,7 +45,11 @@
         }
     }
 }
+.transf{
+    animation: dg 10s linear infinite;
+}
 .nav-img{
+    
     &:hover{
         svg{
             border-radius: 100%;

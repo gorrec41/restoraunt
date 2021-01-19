@@ -1,0 +1,35 @@
+include ./_line
+
+mixin form
+    .wrap__content
+        
+        h2.content__title.centr-title
+            | book a table
+        +line
+        .block-form
+            .form__item
+                input(type="text", placeholder="Name")
+                input(type="text", placeholder="Phone")
+                input(input type="date", placeholder="Date (mm/dd)")
+            .form__item
+                input(type="text", placeholder="Email")
+                select.select(name="Peopl") 
+                    option(value="r1")
+                        | Peopl
+                    option(value="r2")
+                        | 1
+                    option(value="r3")
+                        | 2
+                    option(value="r4")
+                        | 3
+                select.select(name="Time")
+                    option(value="r1")
+                        | Time
+                    option(value="r2")
+                        | 10:00
+                    option(value="r3")
+                        | 20:00
+                    option(value="r4")
+                        | 3:00
+                
+                
