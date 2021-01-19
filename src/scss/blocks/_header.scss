@@ -5,6 +5,7 @@
     padding-bottom: 80px;
     background-color: #000;
     background-image: url('../img/header/headerbg.jpg');
+    animation: bg 10s linear infinite;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -44,7 +45,11 @@
         }
     }
 }
+.transf{
+    animation: dg 10s linear infinite;
+}
 .nav-img{
+    
     &:hover{
         svg{
             border-radius: 100%;

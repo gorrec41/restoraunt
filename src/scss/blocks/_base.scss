@@ -55,8 +55,7 @@ max-width: 1430px;
     border-radius: 50px;
     margin-bottom: 30px;
 }
-.aboutus,
-.mastercheff{
+section{
     padding: 100px 0;
     overflow: hidden;
 }
@@ -115,14 +114,15 @@ max-width: 1430px;
     margin-left: 20px;
     &::after{
         position: absolute;
-        top: 50%;
-        right: 0;
+        top: 25%;
+        left: 75%;
         transform: translate(50%, -50%);
         content: '';
         max-width: 40%;
         max-height: 40%;
         width: 100%;
         height: 100%;
+        animation: dg 10s linear infinite;
         border: 20px solid #E8C300;
         border-radius: 5px;
     }
@@ -131,15 +131,57 @@ max-width: 1430px;
     margin-right: 20px;
     &::after{
         position: absolute;
-        top: 50%;
-        left: 0;
+        top: 25%;
+        left: -25%;
         transform: translate(-50%, -50%);
         content: '';
         max-width: 40%;
         max-height: 40%;
         width: 100%;
         height: 100%;
+        animation: dg 5s linear infinite;
         border: 20px solid #E8C300;
         border-radius: 5px;
+    }
+}
+
+@keyframes dg {
+    0% {
+        transform: rotate(0deg);
+        opacity: 1;
+    }
+    25% {
+        transform: rotate(90deg);
+        opacity: .5;
+    }
+    50% {
+        transform: rotate(180deg);
+        opacity: 0;
+    }
+    75% {
+        transform: rotate(270deg);
+        opacity: .5;
+    }
+    100% {
+        transform: rotate(360deg);
+        opacity: 1;
+    }
+}
+
+@keyframes bg{
+    0%{
+        background-image: url('./../img/header/headerbg.jpg');
+    }
+    25%{
+        background-image: url('./../img/specialty.jpg');
+    }
+    50%{
+        background-image: url('./../img/specialty.jpg');
+    }
+    75%{
+        background-image: url('./../img/speс.jpg');
+    }
+    100%{
+        background-image: url('./../img/header/headerbg.jpg');
     }
 }
