@@ -1,0 +1,29 @@
+.specshion{
+    background-color: #000;
+    background-image: url('./../img/specialty.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    .header__subtitle{
+        color: #fff;
+    }
+}
+.wrap__circle{
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+.circle{
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background-color: rgba(255, 255, 255, 0.5);
+    margin-right: 10px;
+    &:last-child{
+        margin-right: 0;
+    }
+    &:hover{
+        background-color: rgba(255, 255, 255, 0.8);
+    }
+}

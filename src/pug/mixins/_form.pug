@@ -1,6 +1,6 @@
 include ./_line
 
-mixin form
+mixin form(btntext)
     .wrap__content
         
         h2.content__title.centr-title
@@ -31,5 +31,6 @@ mixin form
                         | 20:00
                     option(value="r4")
                         | 3:00
-                
+        button.btnform #{btntext}
+            
                 

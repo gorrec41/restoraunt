@@ -1,0 +1,10 @@
+include ./../mixins/_line
+include ./../mixins/_list
+
+section.menu
+    .container
+        h2.content__title DELICIOUS MENU
+        +line
+        h4.content__subtitle
+            | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.
+        +list('soup', 'pizza','pasta', 'desert', 'wine','beer', 'drinks')

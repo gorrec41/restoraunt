@@ -1,0 +1,22 @@
+.menu{
+    .content__title,
+    .content__subtitle{
+        display: block;
+        max-width: 570px;
+        margin: 0 auto;
+        margin-bottom: 55px;
+    }
+}
+.menu__list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.item{
+    padding: 10px 40px;
+    border-right: 2px solid #cecece;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 12px;
+    color: #333333;
+}
