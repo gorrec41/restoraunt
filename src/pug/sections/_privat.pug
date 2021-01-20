@@ -5,5 +5,12 @@ section.privat
     .container
         h2.header__subtitle OUR TEAM
         .wrap__block-content
-            +rigth_imgsquare('./img/rectangle.jpg')
-            +left_imgsquare('./img/clock.jpg')
+            .privat__left
+                +rigth_imgsquare('./img/rectangle.jpg')
+                h2.content__title.privat__top
+                    | weddings
+            .privat__right
+                +left_imgsquare('./img/clock.jpg')
+                h2.content__title.privat__button
+                    | corporate pzrties
+            
